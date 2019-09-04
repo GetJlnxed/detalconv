@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145889249-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145889249-1');
+
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(54951370, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>ДетальКонвейер|Контакты Конвейеры Транспортеры</title>
+    <style type="text/css">
+        #page-preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            z-index: 10000;
+        }
+
+        #page-preloader .spinner {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            background: url('img/preloader.gif') no-repeat 50% 50%;
+        }
+
+        .noscriptAlert {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100000;
+            background-color: #363636;
+            width: 50%;
+            height: 500px;
+            left: 0;
+            right: 0;
+            top: 15%;
+            margin: 0 auto;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .8);
+        }
+
+    </style>
+</head>
+
+<body>
+    <noscript>
+        <div class="noscriptAlert">
+            <p>Увы и ах, ваш браузер не поддерживает JavaScript. Это значит, что вы не сможете увидеть красивых эффектов и, возможно, некоторую часть контента. Чтобы исправить это недарозумение - рекомендуем вам обновить браузер или скачать более современенный. Так же может помочь включение поддержки JavaScript в настройках браузера. <br><span><a href="https://ru.wikipedia.org/wiki/JavaScript">Что такое JavaScript?</a></span></p>
+        </div>
+    </noscript>
+    <div id="page-preloader"><span class="spinner"></span></div>
+    <!--preloader-->
+    <wrapper class="contactUs" id="ContactUsWinID">
+        <wrapper class="formPart partProfile">
+            <div class="buttonContUsClose"><span></span></div>
+            <div class="placeholder">
+            </div>
+            <div class="descriptionContUs">
+                <div class="ContUsLogo"><img src="img/new-logo.png" alt="Логотип"></div>
+                <p>Пожалуйста, заполните поля в форме справа, чтобы связаться с нами.</p>
+            </div>
+            <form enctype="multipart/form-data" method="post" id="ContactUsForm">
+                <div class="inner name">
+                    <input type="text" id="name" name="name" placeholder="Введите свое имя" required>
+                    <span class="helpText"></span>
+                    <label for="name">Имя</label>
+                </div>
+                <div class="inner phone">
+                    <input type="text" id="phone" name="phone" placeholder="+7 (900) 111 22 33" required>
+                    <span class="helpText"></span>
+                    <label for="phone">Тел. номер</label>
+                </div>
+                <div class="inner e-mail">
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    <span class="helpText"></span>
+                    <label for="email">e-mail</label>
+                </div>
+                <div class="inner prodType">
+                    <select name="prodType" id="prodType" name="prodType">
+                        <option value="select">--Выберите тип продукции--</option>
+                        <option value="option1">Конвейеры и комплектующие</option>
+                        <option value="option2">Термопрессы и комплектующие</option>
+                        <option value="other">Другое</option>
+                    </select>
+                    <label for="prodType">Тип продукции</label>
+                </div>
+                <div class="inner message">
+                    <textarea name="userMes" id="userMes" placeholder="Введите ваше сообщение"></textarea>
+                    <label for="userMes">Ваше сообщение</label>
+                </div>
+                <div class="inner fileUpload">
+                    <input name="myfile[]" id="myfile" type="file" multiple>
+                    <label for="file">Выберите файл</label>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Отправить" id="submitForm">
+                </div>
+            </form>
+        </wrapper>
+        <wrapper class="formPart partConfirmed">
+            <p>Ваша заявка отправлена, мы свяжемся с вами в близжайшее время</p>
+        </wrapper>
+    </wrapper>
+    <div class="filter"></div>
+    <div class="mobileMenu" id="mobileMenu">
+        <a href="#" class="button" id="mobileMenuButtonID">
+            <span></span>
+        </a>
+        <wrapper class="mmNav">
+            <ul class="mmNavLi">
+                <li class="mmNavLiItem"><a href="/" class="mmNavLinkBut"><i class="fas fa-home"></i><span>Главная</span></a></li>
+                <li class="mmNavLiItem mmNavLiItemWS">
+                    <a href="#" class="mmNavLinkButWS">
+                        <i class="fas fa-store"></i>
+                        <span>Продукция</span>
+                    </a>
+                    <ul class="mmSubList">
+                        <li class="mmSubItem"><a href="reconstruction.html">Конвейеры</a></li>
+                        <li class="mmSubItem"><a href="thermopress.html">Термопрессы</a></li>
+                        <li class="mmSubItem"><a href="reconstruction.html">Конвейерные ремни</a></li>
+                        <li class="mmSubItem"><a href="grids.html">Конвейерные сетки</a></li>
+                        <li class="mmSubItem"><a href="reconstruction.html">Воздуховоды</a></li>
+                        <li class="mmSubItem"><a href="reconstruction.html">Конвейерные ленты</a></li>
+                    </ul>
+                </li>
+                <li class="mmNavLiItem"><a href="contacts.html" class="mmNavLinkBut"><i class="fas fa-address-book"></i><span>Контакты</span></a></li>
+            </ul>
+        </wrapper>
+    </div>
+    <header class="block header">
+        <div class="infoBlock">
+            <wrapper class="infoBlockWrap">
+                <div class="contacts">
+                    <a href="/" class="contactsSubLink"></a>
+                    <div class="subLogo"><img src="img/new-logo.png" alt="Логотип"></div>
+                    <p class="extraHedaing">ДетальКонвейер</p>
+                    <p><i class="fas fa-envelope"></i> info@detkonv.ru</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 647-67-00</p>
+                    <p><i class="fas fa-globe-americas"></i> Ул. Открытое шоссе, д. 12 стр. 3</p>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </wrapper>
+        </div>
+        <div class="navBlock" id="navBlock">
+            <wrapper class="navBlockWrap">
+                <div class="logo">
+                    <a href="/" class="logoLink"></a>
+                    <img src="img/new-logo.png" alt="Логотип">
+                    <p>ДетальКонвейер</p>
+                </div>
+                <nav class="navigation">
+                    <ul class="navList">
+                        <li><a href="/">Главная</a></li>
+                        <li>
+                            <a href="/#products">продукция</a>
+                            <ul class="subList">
+                                <li class="subItem"><a href="reconstruction.html">Конвейеры</a></li>
+                                <li class="subItem"><a href="thermopress.html">Термопрессы</a></li>
+                                <li class="subItem"><a href="reconstruction.html">Конвейерные ремни</a></li>
+                                <li class="subItem"><a href="grids.html">Конвейерные сетки</a></li>
+                                <li class="subItem"><a href="reconstruction.html">Воздуховоды</a></li>
+                                <li class="subItem"><a href="reconstruction.html">Конвейерные ленты</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="headerButton" id="ContactUsBut"><span>Свяжитесь с нами</span></a>
+            </wrapper>
+        </div>
+    </header>
+    <main>
+        <wrapper class="block sectionContacts">
+            <wrapper class="contactsInfo">
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.905120889555!2d37.73482925261387!3d55.812247537287554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b534f8eb9bb877%3A0xdcac4e35c727d0d6!2z0J7RgtC60YDRi9GC0L7QtSDRiC4sIDEyINGB0YLRgNC-0LXQvdC40LUgMywg0JzQvtGB0LrQstCwLCAxMDczNzA!5e0!3m2!1sru!2sru!4v1566060722741!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="adressInfo">
+                    <div class="adress">
+                        <p>Адрес:</p>
+                        <p>107370 Россия, Москва, ул. Открытое шоссе, 12к3</p>
+                    </div>
+                    <div class="telephone">
+                        <p>Телефон:</p>
+                        <p>
+                            +7 495 647 67 00<br>
+                            +7 903 247 67 00
+                        </p>
+                    </div>
+                    <div class="mail">
+                        <p>e-mail:</p>
+                        <p>info@detkonv.ru</p>
+                    </div>
+                    <div class="wayDescr">
+                        <p>Как к нам попасть:</p>
+                        <p><span>Метро:</span><br>
+                            М. Бульвар Рокоссовского, последний вагон из центра, выход в сторону Открытое шоссе, по переходу до конца. На светофоре пересечь улицу Открытое шоссе, пройти направо 50 м вдоль 5-этажного кирпичного здания. Вход по ступеням, напротив трамвайной остановки.
+                        </p>
+                        <p><span>МЦК:</span><br>
+                            Выйти на улицу, пройти прямо до подземного перехода, по нему пройти вправо до конца. На светофоре пересечь улицу Открытое шоссе, пройти направо 50 м вдоль 5-этажного кирпичного здания. Вход по ступеням, напротив трамвайной остановки.
+                        </p>
+                    </div>
+                </div>
+            </wrapper>
+        </wrapper>
+    </main>
+    <footer class="block footer">
+        <wrapper class="footerContent">
+            <wrapper class="cont cont1">
+                <div class="logo">
+                    <img src="img/logosvgicon.svg" alt="Логотип компании">
+                    <p>ДетальКонвейер</p>
+                </div>
+                <div class="text">
+                    <p>Конвейеры и термопрессы.<br>
+                        Транспортерные сетки и конвейерные ленты.<br>
+                        Ремни, шланги, рукава, воздуховоды.</p>
+                </div>
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </wrapper>
+            <wrapper class="cont cont2">
+                <p>Навигация</p>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/#products">Продукция</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </wrapper>
+            <wrapper class="cont cont3">
+                <p class="heading">Контакты</p>
+                <wrapper>
+                    <p>Наш адрес:</p>
+                    <p>107370 Россия, г. Москва, ул Открытое шоссе, дом 12, строение 3 </p>
+                </wrapper>
+                <wrapper>
+                    <p>Телефоны:</p>
+                    <p>+7 (495) 647-67-00</p>
+                    <p>+7 (903) 247-67-00</p>
+                </wrapper>
+            </wrapper>
+            <wrapper class="cont cont4">
+            </wrapper>
+        </wrapper>
+        <div class="copyright">
+            <p class="copyrightInfo">2019 © ДетальКонвейер. All rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="libs/scroll-lock.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+<script>
+    $(window).on('load', function() {
+        var $preloader = $('#page-preloader'),
+            $spinner = $preloader.find('.spinner'); //preloader
+        $spinner.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+    });
+
+</script>
+
+</html>

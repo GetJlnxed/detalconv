@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145889249-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145889249-1');
+
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(54951370, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>ДетальКонвейер|Конвейерные сетки Транспортерные сетки</title>
+    <style type="text/css">
+        #page-preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            z-index: 10000;
+        }
+
+        #page-preloader .spinner {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            background: url('img/preloader.gif') no-repeat 50% 50%;
+        }
+
+        .noscriptAlert {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100000;
+            background-color: #363636;
+            width: 50%;
+            height: 500px;
+            left: 0;
+            right: 0;
+            top: 15%;
+            margin: 0 auto;
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .8);
+        }
+
+    </style>
+</head>
+
+<body>
+    <noscript>
+        <div class="noscriptAlert">
+            <p>Увы и ах, ваш браузер не поддерживает JavaScript. Это значит, что вы не сможете увидеть красивых эффектов и, возможно, некоторую часть контента. Чтобы исправить это недарозумение - рекомендуем вам обновить браузер или скачать более современенный. Так же может помочь включение поддержки JavaScript в настройках браузера. <br><span><a href="https://ru.wikipedia.org/wiki/JavaScript">Что такое JavaScript?</a></span></p>
+        </div>
+    </noscript>
+    <div id="page-preloader"><span class="spinner"></span></div>
+    <!--preloader-->
+    <div class="itemDisclaimerForMobile" id="itemDisclaimerForMobile">
+        <a href="#" class="disclaimerCloseButton"><span></span></a>
+        <img src="" alt="">
+        <div class="disclaimerProductDescription">
+            <p></p>
+        </div>
+        <a href="#" class="disclaimerDownloadButton"><span>Скачать опросный лист</span></a>
+    </div>
+    <wrapper class="contactUs" id="ContactUsWinID">
+        <wrapper class="formPart partProfile">
+            <div class="buttonContUsClose"><span></span></div>
+            <div class="placeholder">
+            </div>
+            <div class="descriptionContUs">
+                <div class="ContUsLogo"><img src="img/new-logo.png" alt="Логотип"></div>
+                <p>Пожалуйста, заполните поля в форме справа, чтобы связаться с нами.</p>
+            </div>
+            <form enctype="multipart/form-data" method="post" id="ContactUsForm">
+                <div class="inner name">
+                    <input type="text" id="name" name="name" placeholder="Введите свое имя" required>
+                    <span class="helpText"></span>
+                    <label for="name">Имя</label>
+                </div>
+                <div class="inner phone">
+                    <input type="text" id="phone" name="phone" placeholder="+7 (900) 111 22 33" required>
+                    <span class="helpText"></span>
+                    <label for="phone">Тел. номер</label>
+                </div>
+                <div class="inner e-mail">
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    <span class="helpText"></span>
+                    <label for="email">e-mail</label>
+                </div>
+                <div class="inner prodType">
+                    <select name="prodType" id="prodType" name="prodType">
+                        <option value="select">--Выберите тип продукции--</option>
+                        <option value="option1">Конвейеры и комплектующие</option>
+                        <option value="option2">Термопрессы и комплектующие</option>
+                        <option value="other">Другое</option>
+                    </select>
+                    <label for="prodType">Тип продукции</label>
+                </div>
+                <div class="inner message">
+                    <textarea name="userMes" id="userMes" placeholder="Введите ваше сообщение"></textarea>
+                    <label for="userMes">Ваше сообщение</label>
+                </div>
+                <div class="inner fileUpload">
+                    <input name="myfile[]" id="myfile" type="file" multiple>
+                    <label for="file">Выберите файл</label>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Отправить" id="submitForm">
+                </div>
+            </form>
+        </wrapper>
+        <wrapper class="formPart partConfirmed">
+            <p>Ваша заявка отправлена, мы свяжемся с вами в близжайшее время</p>
+        </wrapper>
+    </wrapper>
+    <div class="filter"></div>
+    <div class="mobileMenu" id="mobileMenu">
+        <a href="#" class="button" id="mobileMenuButtonID">
+            <span></span>
+        </a>
+        <wrapper class="mmNav">
+            <ul class="mmNavLi">
+                <li class="mmNavLiItem"><a href="/" class="mmNavLinkBut"><i class="fas fa-home"></i><span>Главная</span></a></li>
+                <li class="mmNavLiItem mmNavLiItemWS">
+                    <a href="#" class="mmNavLinkButWS">
+                        <i class="fas fa-store"></i>
+                        <span>Продукция</span>
+                    </a>
+                    <ul class="mmSubList">
+                        <li class="mmSubItem"><a href="reconstruction.html">Конвейеры</a></li>
+                        <li class="mmSubItem"><a href="thermopress.html">Термопрессы</a></li>
+                        <li class="mmSubItem"><a href="reconstruction.html">Конвейерные ремни</a></li>
+                        <li class="mmSubItem"><a href="grids.html">Конвейерные сетки</a></li>
+                        <li class="mmSubItem"><a href="reconstruction.html">Воздуховоды</a></li>
+                        <li class="mmSubItem"><a href="reconstruction.html">Конвейерные ленты</a></li>
+                    </ul>
+                </li>
+                <li class="mmNavLiItem"><a href="contacts.html" class="mmNavLinkBut"><i class="fas fa-address-book"></i><span>Контакты</span></a></li>
+            </ul>
+        </wrapper>
+    </div>
+    <header class="block header">
+        <div class="infoBlock">
+            <wrapper class="infoBlockWrap">
+                <div class="contacts">
+                    <a href="/" class="contactsSubLink"></a>
+                    <div class="subLogo"><img src="img/new-logo.png" alt="Логотип"></div>
+                    <p class="extraHedaing">ДетальКонвейер</p>
+                    <p><i class="fas fa-envelope"></i> info@detkonv.ru</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 647-67-00</p>
+                    <p><i class="fas fa-globe-americas"></i> Ул. Открытое шоссе, д. 12 стр. 3</p>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </wrapper>
+        </div>
+        <div class="navBlock" id="navBlock">
+            <wrapper class="navBlockWrap">
+                <div class="logo">
+                    <a href="/" class="logoLink"></a>
+                    <img src="img/new-logo.png" alt="Логотип">
+                    <p>ДетальКонвейер</p>
+                </div>
+                <nav class="navigation">
+                    <ul class="navList">
+                        <li><a href="/">Главная</a></li>
+                        <li>
+                            <a href="/#products">продукция</a>
+                            <ul class="subList">
+                                <li class="subItem"><a href="reconstruction.html">Конвейеры</a></li>
+                                <li class="subItem"><a href="thermopress.html">Термопрессы</a></li>
+                                <li class="subItem"><a href="reconstruction.html">Конвейерные ремни</a></li>
+                                <li class="subItem"><a href="grids.html">Конвейерные сетки</a></li>
+                                <li class="subItem"><a href="reconstruction.html">Воздуховоды</a></li>
+                                <li class="subItem"><a href="reconstruction.html">Конвейерные ленты</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="headerButton" id="ContactUsBut"><span>Свяжитесь с нами</span></a>
+            </wrapper>
+        </div>
+    </header>
+    <main>
+        <section class="block sectionGrids">
+            <div class="productMainHeading">
+
+                <wrapper class="productMainHeadingWrap">
+                    <h1>Сетки конвейерные</h1>
+                    <p>Предлагаем большой выбор металлических транспортерных сеток для ленточных транспортеров, конвейеров рольгангов и шнековых (винтовых) конвейеров, которые широко применяются в том числе в пищевой и фармацевтической промышленности, а также используются в пунктах общественного питания – в ресторанах, кафе, барах и столовых.
+
+                        Особенности транспортерных или конвейерных сеток, таких как сетки для туннельных печей, гладкие, сильные, коррозионно-стойкие, имеют очень высокую прочность на разрыв, дышащие, не поддающиеся деформации и т.д.
+
+                        Сетка транспортерная или сетка конвейерная представляет собой спирали, соединенные между собой стержнями сетки. Направление спиралей попеременно правое и левое. Транспортерная, конвейерная сетка характеризуется шагом навивки спирали, высотой спирали и диаметром проволоки спирали сетки.</p>
+
+                    <span>Основные свойства металлических транспортерных сеток:</span>
+                    <ul>
+                        <li>изготавливаются из углеродистых, нержавеющих и жаростойких сталей, с рабочим диапазоном температур от -30&deg;С до 1200&deg;С</li>
+                        <li>при изготовлении используется проволока диаметром от 1 мм до 5 мм
+                        </li>
+                    </ul>
+                    <span>Область применения металлических конвейерных сеток:</span>
+                    <ul>
+                        <li>для транспортировки в туннельных печах, на линиях охлаждения, быстрой заморозки, мойки, просеивания, калибровки, глазирования хлебобулочных и кондитерских изделий</li>
+                        <li>в качестве транспортерной ленты</li>
+                        <li>для сушки различных материалов и пищевых продуктов</li>
+                        <li>на линиях подачи стеклянной, жестяной и пластиковой тары</li>
+                        <li>в упаковщиках продукции в термоусадочную пленку</li>
+                    </ul>
+                </wrapper>
+            </div>
+            <wrapper class="products">
+                <wrapper class="productType gridsTransport">
+                    <h2>Сетки Конвейерные</h2>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t1v1.png" alt="">
+                        <div class="after">
+                            <p>Тип 1 Вид 1</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span>Применение:</span> Транспортировка, охлаждение.<br>
+                            <span>Отличительные свойства:</span> Вытягивается по длине.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t1v2.png" alt="">
+                        <div class="after">
+                            <p>Тип 1 Вид 2</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span>Применение:</span> Транспортировка, охлаждение.<br>
+                            <span>Отличительные свойства:</span> Вытягивается по длине.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t2v1.png" alt="">
+                        <div class="after">
+                            <p>Тип 2 Вид 1</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span>Применение:</span> Печи туннельные, выпечка печенья, сушка сухарей.<br>
+                            <span>Отличительные свойства:</span> Одностороннее направление спиралей, вытягивается по длине.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t2v2.png" alt="">
+                        <div class="after">
+                            <p>Тип 2 Вид 2</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span>Применение:</span> Печи туннельные, выпечка печенья, сушка сухарей.<br>
+                            <span>Отличительные свойства:</span> Одностороннее направление спиралей, вытягивается по длине.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t3.png" alt="">
+                        <div class="after">
+                            <p>Тип 3</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка, сушка, обработка.<br>
+                            <span> Отличительные свойства:</span> Используется на транспортерах небольшой длины с небольшой нагрузкой, требуется выравнивание по длине перед натяжением.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t4.png" alt="">
+                        <div class="after">
+                            <p>Тип 4</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка мелкого груза.<br>
+                            <span> Отличительные свойства:</span> Выдерживает большую нагрузку на растяжение.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t5v1.png" alt="">
+                        <div class="after">
+                            <p>Тип 5 Вид 1</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Термоупаковка, транспортировка, охлаждение, мойка, сушка, туннельные печи.<br>
+                            <span> Отличительные свойства:</span> Не растягивается, не требует выравнивания перед натяжением.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t5v2.png" alt="">
+                        <div class="after">
+                            <p>Тип 5 Вид 2</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Термоупаковка, транспортировка, охлаждение, мойка, сушка, туннельные печи.<br>
+                            <span> Отличительные свойства:</span> Не растягивается, не требует выравнивания перед натяжением.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t5v3.png" alt="">
+                        <div class="after">
+                            <p>Тип 5 Вид 3</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Термоупаковка, транспортировка, охлаждение, мойка, сушка, туннельные печи.<br>
+                            <span> Отличительные свойства:</span> Не растягивается, не требует выравнивания перед натяжением.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t6.png" alt="">
+                        <div class="after">
+                            <p>Тип 6</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка в печах.<br>
+                            <span> Отличительные свойства:</span> Выдерживает большую нагрузку на растяжение, большой вес на 1 м<sup>2</sup>.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t7v1.png" alt="">
+                        <div class="after">
+                            <p>Тип 7 Вид 1</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка в печах.<br>
+                            <span> Отличительные свойства:</span> Большая поверхность соприкосновения, выдерживает большую нагрузку.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t7v2.png" alt="">
+                        <div class="after">
+                            <p>Тип 7 Вид 2</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка в печах.<br>
+                            <span> Отличительные свойства:</span> Большая поверхность соприкосновения, выдерживает большую нагрузку.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t7v3.png" alt="">
+                        <div class="after">
+                            <p>Тип 7 Вид 3</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка в печах.<br>
+                            <span> Отличительные свойства:</span> Большая поверхность соприкосновения, выдерживает большую нагрузку.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t8v1.png" alt="">
+                        <div class="after">
+                            <p>Тип 8 Вид 1</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Туннельные печи.<br>
+                            <span> Отличительные свойства:</span> Сетка при натяжении не сжимается по ширине полотна.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t8v2.png" alt="">
+                        <div class="after">
+                            <p>Тип 8 Вид 2</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Туннельные печи.<br>
+                            <span> Отличительные свойства:</span> Сетка при натяжении не сжимается по ширине полотна.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t8v3.png" alt="">
+                        <div class="after">
+                            <p>Тип 8 Вид 3</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Туннельные печи.<br>
+                            <span> Отличительные свойства:</span> Сетка при натяжении не сжимается по ширине полотна.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t9v1.png" alt="">
+                        <div class="after">
+                            <p>Тип 9 Вид 1</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> - <br>
+                            <span> Отличительные свойства:</span> -
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t9v2.png" alt="">
+                        <div class="after">
+                            <p>Тип 9 Вид 2</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> - <br>
+                            <span> Отличительные свойства:</span> -
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t10.png" alt="">
+                        <div class="after">
+                            <p>Тип 10</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> - <br>
+                            <span> Отличительные свойства:</span> -
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t11v1.png" alt="">
+                        <div class="after">
+                            <p>Тип 11 Вид 1</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка, глазировка, калибровка, заморозка.<br>
+                            <span> Отличительные свойства:</span> Значительно сокращается срок службы при сильном натяжении.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t11v2.png" alt="">
+                        <div class="after">
+                            <p>Тип 11 Вид 2</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка, глазировка, калибровка, заморозка.<br>
+                            <span> Отличительные свойства:</span> Значительно сокращается срок службы при сильном натяжении.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t11v3.png" alt="">
+                        <div class="after">
+                            <p>Тип 11 Вид 3</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка, глазировка, калибровка, заморозка.<br>
+                            <span> Отличительные свойства:</span> Значительно сокращается срок службы при сильном натяжении.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t12v1.png" alt="">
+                        <div class="after">
+                            <p>Тип 12 Вид 1</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> - <br>
+                            <span> Отличительные свойства:</span> -
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsTransport/t16.png" alt="">
+                        <div class="after">
+                            <p>Тип 16</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> - <br>
+                            <span> Отличительные свойства:</span> -
+                        </div>
+                    </div>
+                </wrapper>
+                <wrapper class="productType gridsGlazir">
+                    <h2>Сетки глазировочные</h2>
+                    <div class="productItem"><img src="img/grids/gridsGlazir/t11chains.png" alt="">
+                        <div class="after">
+                            <p>Тип 11 На цепях</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> - <br>
+                            <span> Отличительные свойства:</span> -
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsGlazir/t11v1.png" alt="">
+                        <div class="after">
+                            <p>Тип 11 Вид 1</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка, глазировка, калибровка, заморозка.<br>
+                            <span> Отличительные свойства:</span> Значительно сокращается срок службы при сильном натяжении.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsGlazir/t11v2.png" alt="">
+                        <div class="after">
+                            <p>Тип 11 Вид 2</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка, глазировка, калибровка, заморозка.<br>
+                            <span> Отличительные свойства:</span> Значительно сокращается срок службы при сильном натяжении.
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsGlazir/t11v3.png" alt="">
+                        <div class="after">
+                            <p>Тип 11 Вид 3</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> Транспортировка, глазировка, калибровка, заморозка.<br>
+                            <span> Отличительные свойства:</span> Значительно сокращается срок службы при сильном натяжении.
+                        </div>
+                    </div>
+                </wrapper>
+                <wrapper class="productType gridsSpecial">
+                    <h2>Сетки Специальные</h2>
+                    <div class="productItem"><img src="img/grids/gridsSpecial/t13transportneggs.png" alt="">
+                        <div class="after">
+                            <p>Тип 13 Для транспортировки яиц</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> - <br>
+                            <span> Отличительные свойства:</span> -
+                        </div>
+                    </div>
+                    <div class="productItem"><img src="img/grids/gridsSpecial/t14icebox.png" alt="">
+                        <div class="after">
+                            <p>Тип 14 Для морозильных камер</p>
+                        </div>
+                        <div class="gridDescription">
+                            <span> Применение:</span> - <br>
+                            <span> Отличительные свойства:</span> -
+                        </div>
+                    </div>
+                </wrapper>
+            </wrapper>
+            <div id="particles-js"></div>
+        </section>
+    </main>
+    <footer class="block footer">
+        <wrapper class="footerContent">
+            <wrapper class="cont cont1">
+                <div class="logo">
+                    <img src="img/logosvgicon.svg" alt="Логотип компании">
+                    <p>ДетальКонвейер</p>
+                </div>
+                <div class="text">
+                    <p>Конвейеры и термопрессы.<br>
+                        Транспортерные сетки и конвейерные ленты.<br>
+                        Ремни, шланги, рукава, воздуховоды.</p>
+                </div>
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </wrapper>
+            <wrapper class="cont cont2">
+                <p>Навигация</p>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/#products">Продукция</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </wrapper>
+            <wrapper class="cont cont3">
+                <p class="heading">Контакты</p>
+                <wrapper>
+                    <p>Наш адрес:</p>
+                    <p>107370 Россия, г. Москва, ул Открытое шоссе, дом 12, строение 3 </p>
+                </wrapper>
+                <wrapper>
+                    <p>Телефоны:</p>
+                    <p>+7 (495) 647-67-00</p>
+                    <p>+7 (903) 247-67-00</p>
+                </wrapper>
+            </wrapper>
+            <wrapper class="cont cont4">
+            </wrapper>
+        </wrapper>
+        <div class="copyright">
+            <p class="copyrightInfo">2019 © ДетальКонвейер. All rights Reserved</p>
+        </div>
+    </footer>
+    <script src="libs/particles/particles.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="libs/scroll-lock.min.js"></script>
+    <script src="libs/particles/particlesInit.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/productPageVisualiser.min.js"></script>
+</body>
+<script>
+    $(window).on('load', function() {
+        var $preloader = $('#page-preloader'),
+            $spinner = $preloader.find('.spinner'); //preloader
+        $spinner.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+    });
+
+</script>
+
+</html>
